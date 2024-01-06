@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://62vb15eyani4"]
+
+[ext_resource type="PackedScene" uid="uid://b7xsd4vk188x0" path="res://static_body-lv1.tscn" id="1_2dfja"]
+[ext_resource type="Script" path="res://animation.gd" id="1_jtmu4"]
+[ext_resource type="PackedScene" uid="uid://dmnmqtri6hrln" path="res://character.tscn" id="1_qk45f"]
+[ext_resource type="PackedScene" uid="uid://bjgocn3hocdqr" path="res://enemy.tscn" id="3_y8vdv"]
+[ext_resource type="PackedScene" uid="uid://0tfvqunncwa4" path="res://pause_resume.tscn" id="5_vb5jx"]
+
+[node name="Animation" type="Node2D"]
+script = ExtResource("1_jtmu4")
+
+[node name="Level-1" parent="." instance=ExtResource("1_2dfja")]
+
+[node name="Wizard" parent="." instance=ExtResource("1_qk45f")]
+position = Vector2(-316, 339)
+
+[node name="Enemy" parent="." instance=ExtResource("3_y8vdv")]
+position = Vector2(261, 269)
+
+[node name="Pause" parent="." instance=ExtResource("5_vb5jx")]
+visible = false

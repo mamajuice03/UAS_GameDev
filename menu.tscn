@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://q1ckni7cam83"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_ba3y0"]
+[ext_resource type="Texture2D" uid="uid://dwgj4avxkqowc" path="res://assest/logo.png" id="1_o1e15"]
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_ba3y0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578, 327)
+scale = Vector2(0.903125, 0.887671)
+texture = ExtResource("1_o1e15")
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D"]
+offset_left = -84.0
+offset_top = -59.0
+offset_right = 101.0
+offset_bottom = 157.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sprite2D/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Sprite2D/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "PLAY"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Sprite2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Sprite2D/MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "MENU"
+
+[node name="MarginContainer3" type="MarginContainer" parent="Sprite2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Sprite2D/MarginContainer/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "EXIT"
+
+[connection signal="pressed" from="Sprite2D/MarginContainer/VBoxContainer/MarginContainer/Button" to="." method="_on_button_pressed"]

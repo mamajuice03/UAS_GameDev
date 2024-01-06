@@ -1,0 +1,97 @@
+[gd_scene load_steps=7 format=3 uid="uid://bax5wv5pgm3mu"]
+
+[ext_resource type="Texture2D" uid="uid://bafudna3u6hi0" path="res://assest/night city/1.png" id="1_67ymq"]
+[ext_resource type="Texture2D" uid="uid://brpxevhqdh8yh" path="res://assest/night city/2.png" id="2_oq2up"]
+[ext_resource type="Texture2D" uid="uid://dmkwanj4fcb05" path="res://assest/night city/3.png" id="3_si45i"]
+[ext_resource type="Texture2D" uid="uid://bl6ik2e0v8xko" path="res://assest/night city/4.png" id="4_legq2"]
+[ext_resource type="Texture2D" uid="uid://bi0axl124m15e" path="res://assest/night city/5.png" id="5_kr70b"]
+[ext_resource type="PackedScene" uid="uid://62vb15eyani4" path="res://animation.tscn" id="6_v7gvc"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Langit" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Langit"]
+position = Vector2(575.833, 324)
+scale = Vector2(1.99942, 2)
+texture = ExtResource("1_67ymq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Langit"]
+position = Vector2(-576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("1_67ymq")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Langit"]
+position = Vector2(1727, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("1_67ymq")
+
+[node name="Gedung1" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Gedung1"]
+position = Vector2(576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("2_oq2up")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Gedung1"]
+position = Vector2(-576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("2_oq2up")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Gedung1"]
+position = Vector2(1727, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("2_oq2up")
+
+[node name="Gedung2" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Gedung2"]
+position = Vector2(576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("3_si45i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Gedung2"]
+position = Vector2(-576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("3_si45i")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Gedung2"]
+position = Vector2(1727, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("3_si45i")
+
+[node name="Gedung3" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Gedung3"]
+position = Vector2(576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("4_legq2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Gedung3"]
+position = Vector2(-575, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("4_legq2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Gedung3"]
+position = Vector2(1727, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("4_legq2")
+
+[node name="Gedung4" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Gedung4"]
+position = Vector2(576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("5_kr70b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Gedung4"]
+position = Vector2(-576, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("5_kr70b")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Gedung4"]
+position = Vector2(1727, 324)
+scale = Vector2(1.999, 2)
+texture = ExtResource("5_kr70b")
+
+[node name="Animation" parent="." instance=ExtResource("6_v7gvc")]
